@@ -2,7 +2,7 @@ FROM quay.io/devfile/python:slim
 
 # By default, listen on port 8081
 EXPOSE 8081/tcp
-ENV FLASK_PORT=8081
+ENV DJANGO_PORT=8081
 
 # Set the working directory in the container
 WORKDIR /projects
@@ -17,4 +17,4 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Specify the command to run on container start
-CMD [ "python", "./manage.py" ]
+CMD [ "python", "./app.py runserver" ]
