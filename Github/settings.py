@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django-cors-headers',
     'django.contrib.staticfiles',
     "django.core.management",
     'sample_git'
@@ -69,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Github.wsgi.application'
+# WSGI_APPLICATION = 'Github.wsgi.application'
 
 
 # Database
